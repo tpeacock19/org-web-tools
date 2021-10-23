@@ -415,6 +415,7 @@ first-level entry for writing comments."
       (insert "* " link " :website:" "\n\n"
               timestamp "\n\n"
               "** Article" "\n\n")
+      (fill-region (point-min) (point-max))
       (buffer-string))))
 
 (defun org-web-tools--sanitize-html (html)
